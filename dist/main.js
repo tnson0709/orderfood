@@ -1085,7 +1085,7 @@
             }
             return dispatcher.useContext(Context);
           }
-          function useState29(initialState) {
+          function useState31(initialState) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useState(initialState);
           }
@@ -1097,7 +1097,7 @@
             var dispatcher = resolveDispatcher();
             return dispatcher.useRef(initialValue);
           }
-          function useEffect34(create2, deps) {
+          function useEffect36(create2, deps) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useEffect(create2, deps);
           }
@@ -1113,7 +1113,7 @@
             var dispatcher = resolveDispatcher();
             return dispatcher.useCallback(callback, deps);
           }
-          function useMemo15(create2, deps) {
+          function useMemo17(create2, deps) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useMemo(create2, deps);
           }
@@ -1880,15 +1880,15 @@
           exports.useContext = useContext10;
           exports.useDebugValue = useDebugValue;
           exports.useDeferredValue = useDeferredValue;
-          exports.useEffect = useEffect34;
+          exports.useEffect = useEffect36;
           exports.useId = useId4;
           exports.useImperativeHandle = useImperativeHandle2;
           exports.useInsertionEffect = useInsertionEffect2;
           exports.useLayoutEffect = useLayoutEffect8;
-          exports.useMemo = useMemo15;
+          exports.useMemo = useMemo17;
           exports.useReducer = useReducer3;
           exports.useRef = useRef25;
-          exports.useState = useState29;
+          exports.useState = useState31;
           exports.useSyncExternalStore = useSyncExternalStore;
           exports.useTransition = useTransition;
           exports.version = ReactVersion;
@@ -24465,11 +24465,11 @@
               return jsxWithValidation(type, props2, key, false);
             }
           }
-          var jsx42 = jsxWithValidationDynamic;
-          var jsxs17 = jsxWithValidationStatic;
+          var jsx44 = jsxWithValidationDynamic;
+          var jsxs20 = jsxWithValidationStatic;
           exports.Fragment = REACT_FRAGMENT_TYPE;
-          exports.jsx = jsx42;
-          exports.jsxs = jsxs17;
+          exports.jsx = jsx44;
+          exports.jsxs = jsxs20;
         })();
       }
     }
@@ -35346,111 +35346,167 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     return Component4;
   };
 
-  // node_modules/lucide-react/dist/esm/icons/chart-column.js
+  // node_modules/lucide-react/dist/esm/icons/arrow-left.js
   var __iconNode = [
+    ["path", { d: "m12 19-7-7 7-7", key: "1l729n" }],
+    ["path", { d: "M19 12H5", key: "x3x0zl" }]
+  ];
+  var ArrowLeft = createLucideIcon("arrow-left", __iconNode);
+
+  // node_modules/lucide-react/dist/esm/icons/chart-column.js
+  var __iconNode2 = [
     ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
     ["path", { d: "M18 17V9", key: "2bz60n" }],
     ["path", { d: "M13 17V5", key: "1frdt8" }],
     ["path", { d: "M8 17v-3", key: "17ska0" }]
   ];
-  var ChartColumn = createLucideIcon("chart-column", __iconNode);
+  var ChartColumn = createLucideIcon("chart-column", __iconNode2);
 
   // node_modules/lucide-react/dist/esm/icons/check.js
-  var __iconNode2 = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-  var Check = createLucideIcon("check", __iconNode2);
+  var __iconNode3 = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+  var Check = createLucideIcon("check", __iconNode3);
 
   // node_modules/lucide-react/dist/esm/icons/chevron-down.js
-  var __iconNode3 = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-  var ChevronDown = createLucideIcon("chevron-down", __iconNode3);
+  var __iconNode4 = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+  var ChevronDown = createLucideIcon("chevron-down", __iconNode4);
 
   // node_modules/lucide-react/dist/esm/icons/chevron-left.js
-  var __iconNode4 = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
-  var ChevronLeft = createLucideIcon("chevron-left", __iconNode4);
+  var __iconNode5 = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
+  var ChevronLeft = createLucideIcon("chevron-left", __iconNode5);
 
   // node_modules/lucide-react/dist/esm/icons/chevron-right.js
-  var __iconNode5 = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-  var ChevronRight = createLucideIcon("chevron-right", __iconNode5);
+  var __iconNode6 = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+  var ChevronRight = createLucideIcon("chevron-right", __iconNode6);
 
   // node_modules/lucide-react/dist/esm/icons/chevron-up.js
-  var __iconNode6 = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
-  var ChevronUp = createLucideIcon("chevron-up", __iconNode6);
+  var __iconNode7 = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
+  var ChevronUp = createLucideIcon("chevron-up", __iconNode7);
 
   // node_modules/lucide-react/dist/esm/icons/circle-check.js
-  var __iconNode7 = [
+  var __iconNode8 = [
     ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
     ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
   ];
-  var CircleCheck = createLucideIcon("circle-check", __iconNode7);
+  var CircleCheck = createLucideIcon("circle-check", __iconNode8);
 
   // node_modules/lucide-react/dist/esm/icons/clipboard-copy.js
-  var __iconNode8 = [
+  var __iconNode9 = [
     ["rect", { width: "8", height: "4", x: "8", y: "2", rx: "1", ry: "1", key: "tgr4d6" }],
     ["path", { d: "M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2", key: "4jdomd" }],
     ["path", { d: "M16 4h2a2 2 0 0 1 2 2v4", key: "3hqy98" }],
     ["path", { d: "M21 14H11", key: "1bme5i" }],
     ["path", { d: "m15 10-4 4 4 4", key: "5dvupr" }]
   ];
-  var ClipboardCopy = createLucideIcon("clipboard-copy", __iconNode8);
+  var ClipboardCopy = createLucideIcon("clipboard-copy", __iconNode9);
 
   // node_modules/lucide-react/dist/esm/icons/copy.js
-  var __iconNode9 = [
+  var __iconNode10 = [
     ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
     ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
   ];
-  var Copy = createLucideIcon("copy", __iconNode9);
+  var Copy = createLucideIcon("copy", __iconNode10);
 
   // node_modules/lucide-react/dist/esm/icons/download.js
-  var __iconNode10 = [
+  var __iconNode11 = [
     ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }],
     ["polyline", { points: "7 10 12 15 17 10", key: "2ggqvy" }],
     ["line", { x1: "12", x2: "12", y1: "15", y2: "3", key: "1vk2je" }]
   ];
-  var Download = createLucideIcon("download", __iconNode10);
+  var Download = createLucideIcon("download", __iconNode11);
 
   // node_modules/lucide-react/dist/esm/icons/file-down.js
-  var __iconNode11 = [
+  var __iconNode12 = [
     ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
     ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
     ["path", { d: "M12 18v-6", key: "17g6i2" }],
     ["path", { d: "m9 15 3 3 3-3", key: "1npd3o" }]
   ];
-  var FileDown = createLucideIcon("file-down", __iconNode11);
+  var FileDown = createLucideIcon("file-down", __iconNode12);
 
   // node_modules/lucide-react/dist/esm/icons/file-text.js
-  var __iconNode12 = [
+  var __iconNode13 = [
     ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
     ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
     ["path", { d: "M10 9H8", key: "b1mrlr" }],
     ["path", { d: "M16 13H8", key: "t4e002" }],
     ["path", { d: "M16 17H8", key: "z1uh3a" }]
   ];
-  var FileText = createLucideIcon("file-text", __iconNode12);
+  var FileText = createLucideIcon("file-text", __iconNode13);
 
   // node_modules/lucide-react/dist/esm/icons/file-up.js
-  var __iconNode13 = [
+  var __iconNode14 = [
     ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
     ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
     ["path", { d: "M12 12v6", key: "3ahymv" }],
     ["path", { d: "m15 15-3-3-3 3", key: "15xj92" }]
   ];
-  var FileUp = createLucideIcon("file-up", __iconNode13);
+  var FileUp = createLucideIcon("file-up", __iconNode14);
+
+  // node_modules/lucide-react/dist/esm/icons/layers.js
+  var __iconNode15 = [
+    [
+      "path",
+      {
+        d: "M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z",
+        key: "zw3jo"
+      }
+    ],
+    [
+      "path",
+      {
+        d: "M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12",
+        key: "1wduqc"
+      }
+    ],
+    [
+      "path",
+      {
+        d: "M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17",
+        key: "kqbvx6"
+      }
+    ]
+  ];
+  var Layers = createLucideIcon("layers", __iconNode15);
 
   // node_modules/lucide-react/dist/esm/icons/menu.js
-  var __iconNode14 = [
+  var __iconNode16 = [
     ["line", { x1: "4", x2: "20", y1: "12", y2: "12", key: "1e0a9i" }],
     ["line", { x1: "4", x2: "20", y1: "6", y2: "6", key: "1owob3" }],
     ["line", { x1: "4", x2: "20", y1: "18", y2: "18", key: "yk5zj1" }]
   ];
-  var Menu = createLucideIcon("menu", __iconNode14);
+  var Menu = createLucideIcon("menu", __iconNode16);
+
+  // node_modules/lucide-react/dist/esm/icons/message-circle.js
+  var __iconNode17 = [
+    ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
+  ];
+  var MessageCircle = createLucideIcon("message-circle", __iconNode17);
+
+  // node_modules/lucide-react/dist/esm/icons/minus.js
+  var __iconNode18 = [["path", { d: "M5 12h14", key: "1ays0h" }]];
+  var Minus = createLucideIcon("minus", __iconNode18);
 
   // node_modules/lucide-react/dist/esm/icons/moon.js
-  var __iconNode15 = [
+  var __iconNode19 = [
     ["path", { d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z", key: "a7tn18" }]
   ];
-  var Moon = createLucideIcon("moon", __iconNode15);
+  var Moon = createLucideIcon("moon", __iconNode19);
+
+  // node_modules/lucide-react/dist/esm/icons/pen-line.js
+  var __iconNode20 = [
+    ["path", { d: "M12 20h9", key: "t2du7b" }],
+    [
+      "path",
+      {
+        d: "M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z",
+        key: "1ykcvy"
+      }
+    ]
+  ];
+  var PenLine = createLucideIcon("pen-line", __iconNode20);
 
   // node_modules/lucide-react/dist/esm/icons/pen.js
-  var __iconNode16 = [
+  var __iconNode21 = [
     [
       "path",
       {
@@ -35459,17 +35515,17 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       }
     ]
   ];
-  var Pen = createLucideIcon("pen", __iconNode16);
+  var Pen = createLucideIcon("pen", __iconNode21);
 
   // node_modules/lucide-react/dist/esm/icons/plus.js
-  var __iconNode17 = [
+  var __iconNode22 = [
     ["path", { d: "M5 12h14", key: "1ays0h" }],
     ["path", { d: "M12 5v14", key: "s699le" }]
   ];
-  var Plus = createLucideIcon("plus", __iconNode17);
+  var Plus = createLucideIcon("plus", __iconNode22);
 
   // node_modules/lucide-react/dist/esm/icons/printer.js
-  var __iconNode18 = [
+  var __iconNode23 = [
     [
       "path",
       {
@@ -35480,19 +35536,19 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ["path", { d: "M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6", key: "1itne7" }],
     ["rect", { x: "6", y: "14", width: "12", height: "8", rx: "1", key: "1ue0tg" }]
   ];
-  var Printer = createLucideIcon("printer", __iconNode18);
+  var Printer = createLucideIcon("printer", __iconNode23);
 
   // node_modules/lucide-react/dist/esm/icons/refresh-cw.js
-  var __iconNode19 = [
+  var __iconNode24 = [
     ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
     ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
     ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
     ["path", { d: "M8 16H3v5", key: "1cv678" }]
   ];
-  var RefreshCw = createLucideIcon("refresh-cw", __iconNode19);
+  var RefreshCw = createLucideIcon("refresh-cw", __iconNode24);
 
   // node_modules/lucide-react/dist/esm/icons/rocket.js
-  var __iconNode20 = [
+  var __iconNode25 = [
     [
       "path",
       {
@@ -35510,10 +35566,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ["path", { d: "M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0", key: "1f8sc4" }],
     ["path", { d: "M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5", key: "qeys4" }]
   ];
-  var Rocket = createLucideIcon("rocket", __iconNode20);
+  var Rocket = createLucideIcon("rocket", __iconNode25);
 
   // node_modules/lucide-react/dist/esm/icons/save.js
-  var __iconNode21 = [
+  var __iconNode26 = [
     [
       "path",
       {
@@ -35524,17 +35580,17 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ["path", { d: "M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7", key: "1ydtos" }],
     ["path", { d: "M7 3v4a1 1 0 0 0 1 1h7", key: "t51u73" }]
   ];
-  var Save = createLucideIcon("save", __iconNode21);
+  var Save = createLucideIcon("save", __iconNode26);
 
   // node_modules/lucide-react/dist/esm/icons/search.js
-  var __iconNode22 = [
+  var __iconNode27 = [
     ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }],
     ["path", { d: "m21 21-4.3-4.3", key: "1qie3q" }]
   ];
-  var Search = createLucideIcon("search", __iconNode22);
+  var Search = createLucideIcon("search", __iconNode27);
 
   // node_modules/lucide-react/dist/esm/icons/settings.js
-  var __iconNode23 = [
+  var __iconNode28 = [
     [
       "path",
       {
@@ -35544,10 +35600,24 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ],
     ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
   ];
-  var Settings = createLucideIcon("settings", __iconNode23);
+  var Settings = createLucideIcon("settings", __iconNode28);
+
+  // node_modules/lucide-react/dist/esm/icons/shopping-cart.js
+  var __iconNode29 = [
+    ["circle", { cx: "8", cy: "21", r: "1", key: "jimo8o" }],
+    ["circle", { cx: "19", cy: "21", r: "1", key: "13723u" }],
+    [
+      "path",
+      {
+        d: "M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12",
+        key: "9zh506"
+      }
+    ]
+  ];
+  var ShoppingCart = createLucideIcon("shopping-cart", __iconNode29);
 
   // node_modules/lucide-react/dist/esm/icons/square-pen.js
-  var __iconNode24 = [
+  var __iconNode30 = [
     ["path", { d: "M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7", key: "1m0v6g" }],
     [
       "path",
@@ -35557,10 +35627,22 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       }
     ]
   ];
-  var SquarePen = createLucideIcon("square-pen", __iconNode24);
+  var SquarePen = createLucideIcon("square-pen", __iconNode30);
+
+  // node_modules/lucide-react/dist/esm/icons/star.js
+  var __iconNode31 = [
+    [
+      "path",
+      {
+        d: "M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z",
+        key: "r04s7s"
+      }
+    ]
+  ];
+  var Star = createLucideIcon("star", __iconNode31);
 
   // node_modules/lucide-react/dist/esm/icons/sun.js
-  var __iconNode25 = [
+  var __iconNode32 = [
     ["circle", { cx: "12", cy: "12", r: "4", key: "4exip2" }],
     ["path", { d: "M12 2v2", key: "tus03m" }],
     ["path", { d: "M12 20v2", key: "1lh1kg" }],
@@ -35571,41 +35653,57 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ["path", { d: "m6.34 17.66-1.41 1.41", key: "1m8zz5" }],
     ["path", { d: "m19.07 4.93-1.41 1.41", key: "1shlcs" }]
   ];
-  var Sun = createLucideIcon("sun", __iconNode25);
+  var Sun = createLucideIcon("sun", __iconNode32);
 
   // node_modules/lucide-react/dist/esm/icons/trash-2.js
-  var __iconNode26 = [
+  var __iconNode33 = [
     ["path", { d: "M3 6h18", key: "d0wm0j" }],
     ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
     ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }],
     ["line", { x1: "10", x2: "10", y1: "11", y2: "17", key: "1uufr5" }],
     ["line", { x1: "14", x2: "14", y1: "11", y2: "17", key: "xtxkd" }]
   ];
-  var Trash2 = createLucideIcon("trash-2", __iconNode26);
+  var Trash2 = createLucideIcon("trash-2", __iconNode33);
+
+  // node_modules/lucide-react/dist/esm/icons/truck.js
+  var __iconNode34 = [
+    ["path", { d: "M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2", key: "wrbu53" }],
+    ["path", { d: "M15 18H9", key: "1lyqi6" }],
+    [
+      "path",
+      {
+        d: "M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14",
+        key: "lysw3i"
+      }
+    ],
+    ["circle", { cx: "17", cy: "18", r: "2", key: "332jqn" }],
+    ["circle", { cx: "7", cy: "18", r: "2", key: "19iecd" }]
+  ];
+  var Truck = createLucideIcon("truck", __iconNode34);
 
   // node_modules/lucide-react/dist/esm/icons/upload.js
-  var __iconNode27 = [
+  var __iconNode35 = [
     ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }],
     ["polyline", { points: "17 8 12 3 7 8", key: "t8dd8p" }],
     ["line", { x1: "12", x2: "12", y1: "3", y2: "15", key: "widbto" }]
   ];
-  var Upload = createLucideIcon("upload", __iconNode27);
+  var Upload = createLucideIcon("upload", __iconNode35);
 
   // node_modules/lucide-react/dist/esm/icons/users.js
-  var __iconNode28 = [
+  var __iconNode36 = [
     ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
     ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }],
     ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
     ["path", { d: "M16 3.13a4 4 0 0 1 0 7.75", key: "1da9ce" }]
   ];
-  var Users = createLucideIcon("users", __iconNode28);
+  var Users = createLucideIcon("users", __iconNode36);
 
   // node_modules/lucide-react/dist/esm/icons/x.js
-  var __iconNode29 = [
+  var __iconNode37 = [
     ["path", { d: "M18 6 6 18", key: "1bl5f8" }],
     ["path", { d: "m6 6 12 12", key: "d8bk6v" }]
   ];
-  var X = createLucideIcon("x", __iconNode29);
+  var X = createLucideIcon("x", __iconNode37);
 
   // src/components/ui/select.tsx
   var import_jsx_runtime16 = __toESM(require_jsx_runtime());
@@ -42251,6 +42349,34 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
           /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
             Button,
             {
+              variant: "ghost",
+              className: "w-full justify-start",
+              onClick: () => {
+                window.location.hash = "/orderfood";
+              },
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(ShoppingCart, { className: "mr-2 h-4 w-4" }),
+                "\u0110\u1EB7t nhanh"
+              ]
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
+            Button,
+            {
+              variant: "ghost",
+              className: "w-full justify-start",
+              onClick: () => {
+                window.location.hash = "/foodadmin";
+              },
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Settings, { className: "mr-2 h-4 w-4" }),
+                "Qu\u1EA3n l\xFD s\u1EA3n ph\u1EA9m"
+              ]
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
+            Button,
+            {
               variant: viewMode === "dashboard" ? "default" : "ghost",
               className: "w-full justify-start",
               onClick: () => setViewMode("dashboard"),
@@ -42315,16 +42441,729 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
     ] });
   }
 
-  // src/App.tsx
+  // src/pages/orderfood.tsx
+  var import_react18 = __toESM(require_react());
   var import_jsx_runtime40 = __toESM(require_jsx_runtime());
+  var DEFAULT_PRODUCTS = [
+    {
+      id: "food-001",
+      name: "C\u01A1m g\xE0 x\u1ED1i m\u1EE1",
+      category: "C\u01A1m",
+      description: "G\xE0 gi\xF2n, c\u01A1m t\u01A1i v\xE0 n\u01B0\u1EDBc m\u1EAFm chua ng\u1ECDt.",
+      price: 79e3,
+      image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop",
+      active: true
+    },
+    {
+      id: "food-002",
+      name: "Ph\u1EDF b\xF2 t\xE1i",
+      category: "Ph\u1EDF",
+      description: "N\u01B0\u1EDBc d\xF9ng th\u01A1m ngon v\u1EDBi b\xF2 t\xE1i m\u1EC1m v\xE0 h\xE0nh l\xE1.",
+      price: 69e3,
+      image: "https://images.unsplash.com/photo-1582878657521-fad87a0268c9?w=400&h=300&fit=crop",
+      active: true
+    },
+    {
+      id: "food-003",
+      name: "B\xFAn ch\u1EA3 H\xE0 N\u1ED9i",
+      category: "B\xFAn",
+      description: "Ch\u1EA3 n\u01B0\u1EDBng, b\xFAn t\u01B0\u01A1i, rau s\u1ED1ng v\xE0 n\u01B0\u1EDBc ch\u1EA5m \u0111\u1EB7c tr\u01B0ng.",
+      price: 75e3,
+      image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
+      active: true
+    }
+  ];
+  function formatVnd(value) {
+    return value.toLocaleString("vi-VN", {
+      style: "currency",
+      currency: "VND",
+      maximumFractionDigits: 0
+    });
+  }
+  function OrderFoodPage() {
+    const navigate = useNavigate();
+    const [menuItems, setMenuItems] = (0, import_react18.useState)(DEFAULT_PRODUCTS);
+    const [activeCategory, setActiveCategory] = (0, import_react18.useState)("");
+    const [cart, setCart] = (0, import_react18.useState)([]);
+    const [customerName, setCustomerName] = (0, import_react18.useState)("");
+    const [customerPhone, setCustomerPhone] = (0, import_react18.useState)("");
+    const [customerAddress, setCustomerAddress] = (0, import_react18.useState)("");
+    const [customerNote, setCustomerNote] = (0, import_react18.useState)("");
+    const [submitted, setSubmitted] = (0, import_react18.useState)(false);
+    (0, import_react18.useEffect)(() => {
+      const stored = getJson("foodproduct", DEFAULT_PRODUCTS);
+      const activeItems = stored.filter((item) => item.active !== false);
+      setMenuItems(activeItems);
+      const cats = Array.from(new Set(activeItems.map((item) => item.category)));
+      if (cats.length > 0) {
+        setActiveCategory(cats[0]);
+      }
+    }, []);
+    const categories = (0, import_react18.useMemo)(
+      () => Array.from(new Set(menuItems.map((item) => item.category))),
+      [menuItems]
+    );
+    const categoryItems = (0, import_react18.useMemo)(
+      () => menuItems.filter((item) => item.category === activeCategory),
+      [activeCategory, menuItems]
+    );
+    const subtotal = (0, import_react18.useMemo)(
+      () => cart.reduce((acc, item) => acc + item.price * item.quantity, 0),
+      [cart]
+    );
+    const fee = cart.length > 0 ? 15e3 : 0;
+    const total = subtotal + fee;
+    const canPlaceOrder = cart.length > 0 && customerName.trim() && customerPhone.trim() && customerAddress.trim();
+    function addToCart(item) {
+      setCart((current) => {
+        const existing = current.find((row) => row.id === item.id);
+        if (existing) {
+          return current.map(
+            (row) => row.id === item.id ? { ...row, quantity: row.quantity + 1 } : row
+          );
+        }
+        return [...current, { ...item, quantity: 1 }];
+      });
+      setSubmitted(false);
+    }
+    function updateQuantity(id, delta) {
+      setCart(
+        (current) => current.map(
+          (item) => item.id === id ? { ...item, quantity: Math.max(1, item.quantity + delta) } : item
+        ).filter((item) => item.quantity > 0)
+      );
+      setSubmitted(false);
+    }
+    function removeFromCart(id) {
+      setCart((current) => current.filter((item) => item.id !== id));
+      setSubmitted(false);
+    }
+    function handleSubmit() {
+      if (!canPlaceOrder) return;
+      setSubmitted(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    return /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "min-h-screen bg-slate-50 text-slate-900 pb-10", children: /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mb-6 flex flex-col gap-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "flex items-center gap-2 text-sm text-slate-500", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(
+              Button,
+              {
+                variant: "ghost",
+                size: "sm",
+                className: "inline-flex items-center gap-2 px-2 py-1",
+                onClick: () => navigate(-1),
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(ArrowLeft, { className: "h-4 w-4" }),
+                  " Quay l\u1EA1i"
+                ]
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("span", { className: "inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(ShoppingCart, { className: "h-3.5 w-3.5" }),
+              " \u0110\u1EB7t nhanh \u0111\u1ED3 \u0103n"
+            ] })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("h1", { className: "mt-3 text-3xl font-semibold tracking-tight text-slate-900", children: "\u0110\u1EB7t \u0111\u1ED3 \u0103n nhanh trong v\xE0i b\u01B0\u1EDBc" }),
+          /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("p", { className: "mt-2 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base", children: "Ch\u1ECDn m\xF3n, nh\u1EADp th\xF4ng tin v\xE0 x\xE1c nh\u1EADn. Giao t\u1EADn n\u01A1i trong khu v\u1EF1c." })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "grid gap-3 sm:auto-cols-fr sm:grid-flow-col sm:grid", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "rounded-3xl bg-slate-50 p-4 text-sm text-slate-700 shadow-sm", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "font-semibold", children: "Th\u1EDDi gian giao" }),
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { children: "15 - 30 ph\xFAt" })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "rounded-3xl bg-slate-50 p-4 text-sm text-slate-700 shadow-sm", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "font-semibold", children: "Ph\xED ship" }),
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { children: formatVnd(fee) })
+          ] })
+        ] })
+      ] }),
+      submitted && /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mb-6 rounded-3xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900 shadow-sm", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "font-semibold", children: "\u0110\u01A1n h\xE0ng \u0111\xE3 \u0111\u01B0\u1EE3c t\u1EA1o!" }),
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("p", { className: "mt-1", children: "Ch\xFAng t\xF4i \u0111\xE3 ghi nh\u1EADn y\xEAu c\u1EA7u c\u1EE7a b\u1EA1n v\xE0 s\u1EBD li\xEAn h\u1EC7 l\u1EA1i s\u1EDBm." })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "grid gap-6 xl:grid-cols-[1.6fr_1fr]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "space-y-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(Card, { className: "overflow-hidden", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(CardHeader, { children: /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(CardTitle, { children: "Menu ch\u1ECDn m\xF3n" }),
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("p", { className: "text-sm text-slate-500", children: "Ch\u1ECDn m\xF3n b\u1EA1n mu\u1ED1n \u0103n t\u1EEB c\xE1c danh m\u1EE5c." })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "flex flex-wrap gap-2", children: categories.map((category) => /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+                "button",
+                {
+                  className: `rounded-full border px-3 py-1 text-sm transition ${category === activeCategory ? "border-slate-900 bg-slate-900 text-white" : "border-slate-200 bg-white text-slate-700 hover:border-slate-300"}`,
+                  onClick: () => setActiveCategory(category),
+                  type: "button",
+                  children: category
+                },
+                category
+              )) })
+            ] }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(CardContent, { className: "grid gap-4 sm:grid-cols-2 xl:grid-cols-2", children: categoryItems.map((item) => /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(
+              "div",
+              {
+                className: "rounded-3xl border border-slate-200 bg-slate-50 p-5 shadow-sm overflow-hidden",
+                children: [
+                  item.image && /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+                    "img",
+                    {
+                      src: item.image,
+                      alt: item.name,
+                      className: "w-full h-40 object-cover rounded-2xl mb-4",
+                      onError: (e) => {
+                        e.target.style.display = "none";
+                      }
+                    }
+                  ),
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "flex items-start justify-between gap-4", children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "flex-1", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "text-lg font-semibold text-slate-900", children: item.name }),
+                      /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("p", { className: "mt-1 text-sm text-slate-600", children: item.description })
+                    ] }),
+                    /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "text-right text-base font-semibold text-slate-900", children: formatVnd(item.price) })
+                  ] }),
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mt-5 flex items-center justify-between gap-3", children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(
+                      "button",
+                      {
+                        type: "button",
+                        className: "inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800",
+                        onClick: () => addToCart(item),
+                        children: [
+                          /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Plus, { className: "h-4 w-4" }),
+                          " Th\xEAm"
+                        ]
+                      }
+                    ),
+                    /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "flex items-center gap-1 text-xs text-slate-500", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Star, { className: "h-4 w-4 text-amber-500" }),
+                      " Y\xEAu th\xEDch"
+                    ] })
+                  ] })
+                ]
+              },
+              item.id
+            )) })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(Card, { className: "overflow-hidden", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(CardHeader, { children: /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(CardTitle, { children: "Th\xF4ng tin kh\xE1ch h\xE0ng" }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("p", { className: "text-sm text-slate-500", children: "Nh\u1EADp th\xF4ng tin \u0111\u1EC3 giao h\xE0ng ch\xEDnh x\xE1c." })
+            ] }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(CardContent, { className: "grid gap-4", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "grid gap-4 sm:grid-cols-2", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("label", { className: "space-y-1 text-sm text-slate-700", children: [
+                  "H\u1ECD v\xE0 t\xEAn",
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+                    Input,
+                    {
+                      value: customerName,
+                      onChange: (e) => setCustomerName(e.target.value),
+                      placeholder: "Nguy\u1EC5n V\u0103n A"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("label", { className: "space-y-1 text-sm text-slate-700", children: [
+                  "S\u1ED1 \u0111i\u1EC7n tho\u1EA1i",
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+                    Input,
+                    {
+                      value: customerPhone,
+                      onChange: (e) => setCustomerPhone(e.target.value),
+                      placeholder: "0987 654 321"
+                    }
+                  )
+                ] })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("label", { className: "space-y-1 text-sm text-slate-700", children: [
+                "\u0110\u1ECBa ch\u1EC9 nh\u1EADn h\xE0ng",
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+                  Input,
+                  {
+                    value: customerAddress,
+                    onChange: (e) => setCustomerAddress(e.target.value),
+                    placeholder: "S\u1ED1 nh\xE0, \u0111\u01B0\u1EDDng, ph\u01B0\u1EDDng, qu\u1EADn"
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("label", { className: "space-y-1 text-sm text-slate-700", children: [
+                "Ghi ch\xFA th\xEAm",
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+                  Input,
+                  {
+                    value: customerNote,
+                    onChange: (e) => setCustomerNote(e.target.value),
+                    placeholder: "Kh\xF4ng cay / Th\xEAm rau"
+                  }
+                )
+              ] })
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "space-y-6", children: /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(Card, { className: "overflow-hidden", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(CardHeader, { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(CardTitle, { children: "Gi\u1ECF h\xE0ng" }),
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("p", { className: "text-sm text-slate-500", children: "Ki\u1EC3m tra s\u1ED1 l\u01B0\u1EE3ng v\xE0 t\u1ED5ng ti\u1EC1n." })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(CardContent, { className: "space-y-4", children: cart.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center text-slate-500", children: "Ch\u01B0a c\xF3 m\xF3n trong gi\u1ECF. Ch\u1ECDn m\xF3n t\u1EEB menu b\xEAn tr\xE1i." }) : /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "space-y-4", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "space-y-4", children: cart.map((item) => /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "rounded-3xl border border-slate-200 bg-white p-4", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "flex items-start justify-between gap-3", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "font-semibold text-slate-900", children: item.name }),
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mt-1 text-sm text-slate-500", children: [
+                    formatVnd(item.price),
+                    " \xD7 ",
+                    item.quantity
+                  ] })
+                ] }),
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "text-right text-sm font-semibold text-slate-900", children: formatVnd(item.quantity * item.price) })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mt-4 flex items-center justify-between gap-3", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "inline-flex items-center gap-1 rounded-full border border-slate-200 bg-slate-100 px-2 py-1 text-sm text-slate-700", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+                    "button",
+                    {
+                      type: "button",
+                      className: "inline-flex h-7 w-7 items-center justify-center rounded-full text-slate-700 transition hover:bg-slate-200",
+                      onClick: () => updateQuantity(item.id, -1),
+                      children: /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Minus, { className: "h-4 w-4" })
+                    }
+                  ),
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { className: "min-w-[24px] text-center", children: item.quantity }),
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+                    "button",
+                    {
+                      type: "button",
+                      className: "inline-flex h-7 w-7 items-center justify-center rounded-full text-slate-700 transition hover:bg-slate-200",
+                      onClick: () => updateQuantity(item.id, 1),
+                      children: /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Plus, { className: "h-4 w-4" })
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
+                  "button",
+                  {
+                    type: "button",
+                    className: "text-sm font-medium text-rose-600 hover:text-rose-700",
+                    onClick: () => removeFromCart(item.id),
+                    children: "X\xF3a"
+                  }
+                )
+              ] })
+            ] }, item.id)) }),
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "rounded-3xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "flex items-center justify-between", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { children: "T\u1EA1m t\xEDnh" }),
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { children: formatVnd(subtotal) })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mt-2 flex items-center justify-between", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { children: "Ph\xED giao h\xE0ng" }),
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { children: formatVnd(fee) })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mt-3 flex items-center justify-between border-t border-slate-200 pt-3 text-base font-semibold text-slate-900", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { children: "T\u1ED5ng" }),
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { children: formatVnd(total) })
+              ] })
+            ] }),
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(
+              Button,
+              {
+                className: "w-full justify-between",
+                onClick: handleSubmit,
+                disabled: !canPlaceOrder,
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { children: "\u0110\u1EB7t h\xE0ng" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(ChevronRight, { className: "h-4 w-4" })
+                ]
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "rounded-3xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-600", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Truck, { className: "h-4 w-4 text-slate-500" }),
+                "Giao nhanh trong khu v\u1EF1c."
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mt-2 flex items-center gap-2", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Users, { className: "h-4 w-4 text-slate-500" }),
+                " Kh\xE1ch h\xE0ng th\xE2n thi\u1EBFt \u0111\u01B0\u1EE3c \u01B0u \u0111\xE3i."
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "mt-2 flex items-center gap-2", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(MessageCircle, { className: "h-4 w-4 text-slate-500" }),
+                " H\u1ED7 tr\u1EE3 tr\u1EF1c ti\u1EBFp khi c\u1EA7n."
+              ] })
+            ] })
+          ] }) })
+        ] }) })
+      ] })
+    ] }) });
+  }
+
+  // src/pages/foodadmin.tsx
+  var import_react19 = __toESM(require_react());
+  var import_jsx_runtime41 = __toESM(require_jsx_runtime());
+  var STORAGE_KEY2 = "foodproduct";
+  var DEFAULT_PRODUCTS2 = [
+    {
+      id: "food-001",
+      name: "C\u01A1m g\xE0 x\u1ED1i m\u1EE1",
+      category: "C\u01A1m",
+      description: "G\xE0 gi\xF2n, c\u01A1m t\u01A1i v\xE0 n\u01B0\u1EDBc m\u1EAFm chua ng\u1ECDt.",
+      price: 79e3,
+      image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop",
+      active: true
+    },
+    {
+      id: "food-002",
+      name: "Ph\u1EDF b\xF2 t\xE1i",
+      category: "Ph\u1EDF",
+      description: "N\u01B0\u1EDBc d\xF9ng th\u01A1m ngon v\u1EDBi b\xF2 t\xE1i m\u1EC1m v\xE0 h\xE0nh l\xE1.",
+      price: 69e3,
+      image: "https://images.unsplash.com/photo-1582878657521-fad87a0268c9?w=400&h=300&fit=crop",
+      active: true
+    },
+    {
+      id: "food-003",
+      name: "B\xFAn ch\u1EA3 H\xE0 N\u1ED9i",
+      category: "B\xFAn",
+      description: "Ch\u1EA3 n\u01B0\u1EDBng, b\xFAn t\u01B0\u01A1i, rau s\u1ED1ng v\xE0 n\u01B0\u1EDBc ch\u1EA5m \u0111\u1EB7c tr\u01B0ng.",
+      price: 75e3,
+      image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop",
+      active: true
+    }
+  ];
+  function createId() {
+    return crypto.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  }
+  function formatVnd2(value) {
+    return value.toLocaleString("vi-VN", {
+      style: "currency",
+      currency: "VND",
+      maximumFractionDigits: 0
+    });
+  }
+  function FoodAdminPage() {
+    const navigate = useNavigate();
+    const [products, setProducts] = (0, import_react19.useState)([]);
+    const [search, setSearch] = (0, import_react19.useState)("");
+    const [editingId, setEditingId] = (0, import_react19.useState)(null);
+    const [draft, setDraft] = (0, import_react19.useState)({
+      name: "",
+      category: "",
+      description: "",
+      price: 0,
+      image: "",
+      active: true
+    });
+    (0, import_react19.useEffect)(() => {
+      const stored = getJson(STORAGE_KEY2, DEFAULT_PRODUCTS2);
+      setProducts(stored);
+    }, []);
+    (0, import_react19.useEffect)(() => {
+      if (!editingId) {
+        setDraft({ name: "", category: "", description: "", price: 0, image: "", active: true });
+        return;
+      }
+      const product = products.find((item) => item.id === editingId);
+      if (product) {
+        setDraft({ ...product });
+      }
+    }, [editingId, products]);
+    const categories = (0, import_react19.useMemo)(
+      () => Array.from(new Set(products.map((item) => item.category))).sort(),
+      [products]
+    );
+    const filteredProducts = (0, import_react19.useMemo)(() => {
+      const q = search.trim().toLowerCase();
+      if (!q) return products;
+      return products.filter(
+        (item) => [item.name, item.category, item.description].some(
+          (value) => value.toLowerCase().includes(q)
+        )
+      );
+    }, [products, search]);
+    function persist(next) {
+      setProducts(next);
+      setJson(STORAGE_KEY2, next);
+    }
+    function handleSelectProduct(id) {
+      setEditingId(id);
+    }
+    function handleNewProduct() {
+      setEditingId(null);
+    }
+    function handleDeleteProduct(id) {
+      if (!window.confirm("X\xF3a s\u1EA3n ph\u1EA9m n\xE0y?")) return;
+      const next = products.filter((item) => item.id !== id);
+      persist(next);
+      if (editingId === id) {
+        setEditingId(null);
+      }
+    }
+    function handleSaveProduct() {
+      const name = String(draft.name || "").trim();
+      const category = String(draft.category || "").trim();
+      const description = String(draft.description || "").trim();
+      const image = String(draft.image || "").trim();
+      const price = Number(draft.price || 0);
+      if (!name || !category || Number.isNaN(price) || price <= 0) {
+        window.alert("Vui l\xF2ng nh\u1EADp t\xEAn, lo\u1EA1i v\xE0 gi\xE1 h\u1EE3p l\u1EC7.");
+        return;
+      }
+      if (editingId) {
+        const next = products.map(
+          (item) => item.id === editingId ? { ...item, name, category, description, price, image, active: !!draft.active } : item
+        );
+        persist(next);
+      } else {
+        const newProduct = {
+          id: createId(),
+          name,
+          category,
+          description,
+          price,
+          image,
+          active: !!draft.active
+        };
+        persist([newProduct, ...products]);
+        setEditingId(newProduct.id);
+      }
+    }
+    function handleField(key, value) {
+      setDraft((current) => ({ ...current, [key]: value }));
+    }
+    const selectedProduct = products.find((item) => item.id === editingId);
+    return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "min-h-screen bg-slate-50 text-slate-900 pb-10", children: /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "mb-6 flex flex-col gap-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:justify-between", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "flex items-center gap-2 text-sm text-slate-500", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)(
+              Button,
+              {
+                variant: "ghost",
+                size: "sm",
+                className: "inline-flex items-center gap-2 px-2 py-1",
+                onClick: () => navigate(-1),
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(ArrowLeft, { className: "h-4 w-4" }),
+                  " Quay l\u1EA1i"
+                ]
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("span", { className: "inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(Layers, { className: "h-3.5 w-3.5" }),
+              " Qu\u1EA3n l\xFD s\u1EA3n ph\u1EA9m"
+            ] })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("h1", { className: "mt-3 text-3xl font-semibold tracking-tight text-slate-900", children: "B\u1EA3ng \u0111i\u1EC1u khi\u1EC3n s\u1EA3n ph\u1EA9m \u0111\u1ED3 \u0103n" }),
+          /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("p", { className: "mt-2 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base", children: "Th\xEAm, s\u1EEDa, x\xF3a v\xE0 qu\u1EA3n l\xFD s\u1EA3n ph\u1EA9m b\xE1n nhanh cho c\u1EEDa h\xE0ng." })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "grid gap-3 sm:auto-cols-fr sm:grid-flow-col sm:grid", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "rounded-3xl bg-slate-50 p-4 text-sm text-slate-700 shadow-sm", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "font-semibold", children: "S\u1EA3n ph\u1EA9m hi\u1EC7n c\xF3" }),
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { children: products.length })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "rounded-3xl bg-slate-50 p-4 text-sm text-slate-700 shadow-sm", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "font-semibold", children: "Danh m\u1EE5c" }),
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { children: categories.length })
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "grid gap-6 xl:grid-cols-[1.6fr_1fr]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)(Card, { className: "overflow-hidden", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(CardHeader, { children: /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(CardTitle, { children: "Danh s\xE1ch s\u1EA3n ph\u1EA9m" }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("p", { className: "text-sm text-slate-500", children: "T\xECm ki\u1EBFm theo t\xEAn, lo\u1EA1i, ho\u1EB7c m\xF4 t\u1EA3." })
+            ] }),
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "flex flex-wrap items-center gap-2", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)(Button, { variant: "secondary", size: "sm", onClick: handleNewProduct, children: [
+                /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(Plus, { className: "h-4 w-4" }),
+                " Th\xEAm s\u1EA3n ph\u1EA9m"
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                Input,
+                {
+                  value: search,
+                  onChange: (e) => setSearch(e.target.value),
+                  placeholder: "T\xECm ki\u1EBFm...",
+                  className: "max-w-xs"
+                }
+              )
+            ] })
+          ] }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(CardContent, { className: "overflow-auto", children: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "min-w-full overflow-x-auto", children: /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("table", { className: "min-w-full text-sm", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("thead", { className: "sticky top-0 z-10 bg-slate-50 text-slate-700", children: /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("tr", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("th", { className: "px-3 py-3 text-left font-semibold", children: "T\xEAn" }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("th", { className: "px-3 py-3 text-left font-semibold", children: "Danh m\u1EE5c" }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("th", { className: "px-3 py-3 text-right font-semibold", children: "Gi\xE1" }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("th", { className: "px-3 py-3 text-center font-semibold", children: "Tr\u1EA1ng th\xE1i" }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("th", { className: "px-3 py-3 text-right font-semibold", children: "H\xE0nh \u0111\u1ED9ng" })
+            ] }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("tbody", { children: [
+              filteredProducts.map((item) => /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)(
+                "tr",
+                {
+                  className: `border-t border-slate-200 hover:bg-slate-50 ${item.id === editingId ? "bg-slate-100" : ""}`,
+                  children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("td", { className: "px-3 py-3", children: item.name }),
+                    /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("td", { className: "px-3 py-3", children: item.category }),
+                    /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("td", { className: "px-3 py-3 text-right font-semibold text-slate-900", children: formatVnd2(item.price) }),
+                    /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("td", { className: "px-3 py-3 text-center text-sm text-slate-600", children: item.active ? "Kinh doanh" : "\u1EA8n" }),
+                    /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("td", { className: "px-3 py-3 text-right", children: /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "inline-flex items-center gap-2", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                        Button,
+                        {
+                          variant: "ghost",
+                          size: "sm",
+                          onClick: () => handleSelectProduct(item.id),
+                          children: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(PenLine, { className: "h-4 w-4" })
+                        }
+                      ),
+                      /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                        Button,
+                        {
+                          variant: "ghost",
+                          size: "sm",
+                          className: "text-rose-600",
+                          onClick: () => handleDeleteProduct(item.id),
+                          children: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(Trash2, { className: "h-4 w-4" })
+                        }
+                      )
+                    ] }) })
+                  ]
+                },
+                item.id
+              )),
+              filteredProducts.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("tr", { children: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("td", { colSpan: 5, className: "px-3 py-8 text-center text-slate-500", children: "Kh\xF4ng t\xECm th\u1EA5y s\u1EA3n ph\u1EA9m." }) })
+            ] })
+          ] }) }) })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)(Card, { className: "overflow-hidden", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(CardHeader, { children: /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(CardTitle, { children: editingId ? "Ch\u1EC9nh s\u1EEDa s\u1EA3n ph\u1EA9m" : "Th\xEAm s\u1EA3n ph\u1EA9m m\u1EDBi" }),
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("p", { className: "text-sm text-slate-500", children: "Nh\u1EADp th\xF4ng tin v\xE0 l\u01B0u thay \u0111\u1ED5i." })
+          ] }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)(CardContent, { className: "space-y-4", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "space-y-2 text-sm text-slate-700", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("label", { className: "block", children: [
+                "T\xEAn s\u1EA3n ph\u1EA9m",
+                /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                  Input,
+                  {
+                    value: draft.name || "",
+                    onChange: (e) => handleField("name", e.target.value),
+                    placeholder: "V\xED d\u1EE5: C\u01A1m s\u01B0\u1EDDn n\u01B0\u1EDBng"
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("label", { className: "block", children: [
+                "Danh m\u1EE5c",
+                /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                  Input,
+                  {
+                    value: draft.category || "",
+                    onChange: (e) => handleField("category", e.target.value),
+                    placeholder: "V\xED d\u1EE5: C\u01A1m, Ph\u1EDF, B\xFAn"
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("label", { className: "block", children: [
+                "M\xF4 t\u1EA3",
+                /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                  "textarea",
+                  {
+                    rows: 3,
+                    value: draft.description || "",
+                    onChange: (e) => handleField("description", e.target.value),
+                    className: "mt-1 min-h-[70px] w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-300",
+                    placeholder: "M\xF4 t\u1EA3 ng\u1EAFn v\u1EC1 m\xF3n \u0103n"
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("label", { className: "block", children: [
+                "Link \u1EA3nh s\u1EA3n ph\u1EA9m",
+                /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                  Input,
+                  {
+                    value: draft.image || "",
+                    onChange: (e) => handleField("image", e.target.value),
+                    placeholder: "https://example.com/image.jpg"
+                  }
+                ),
+                draft.image && /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                  "img",
+                  {
+                    src: draft.image,
+                    alt: draft.name || "S\u1EA3n ph\u1EA9m",
+                    className: "mt-2 h-20 w-20 rounded object-cover border border-slate-200",
+                    onError: (e) => {
+                      e.target.style.display = "none";
+                    }
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("label", { className: "block", children: [
+                "Gi\xE1 b\xE1n (VND)",
+                /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                  Input,
+                  {
+                    type: "number",
+                    min: 0,
+                    step: 1e3,
+                    value: draft.price ?? 0,
+                    onChange: (e) => handleField("price", Number(e.target.value)),
+                    placeholder: "V\xED d\u1EE5: 79000"
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("label", { className: "flex items-center gap-3 text-sm text-slate-700", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                  "input",
+                  {
+                    type: "checkbox",
+                    checked: !!draft.active,
+                    onChange: (e) => handleField("active", e.target.checked),
+                    className: "h-4 w-4 rounded border-slate-300 text-slate-900"
+                  }
+                ),
+                "Hi\u1EC3n th\u1ECB s\u1EA3n ph\u1EA9m tr\xEAn menu"
+              ] })
+            ] }),
+            /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "flex flex-wrap gap-3 pt-2", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(Button, { onClick: handleSaveProduct, children: editingId ? "C\u1EADp nh\u1EADt" : "L\u01B0u" }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(Button, { variant: "outline", onClick: handleNewProduct, children: "T\u1EA1o m\u1EDBi" }),
+              selectedProduct && /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+                Button,
+                {
+                  variant: "ghost",
+                  className: "text-rose-600",
+                  onClick: () => handleDeleteProduct(selectedProduct.id),
+                  children: "X\xF3a"
+                }
+              )
+            ] })
+          ] })
+        ] })
+      ] })
+    ] }) });
+  }
+
+  // src/App.tsx
+  var import_jsx_runtime42 = __toESM(require_jsx_runtime());
   function App() {
-    return /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(HashRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Routes, { children: /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(HomePage, {}) }) }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(HashRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime42.jsxs)(Routes, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(HomePage, {}) }),
+      /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(Route, { path: "/orderfood", element: /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(OrderFoodPage, {}) }),
+      /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(Route, { path: "/foodadmin", element: /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(FoodAdminPage, {}) })
+    ] }) });
   }
 
   // src/main.tsx
-  var import_jsx_runtime41 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime43 = __toESM(require_jsx_runtime());
   var root = (0, import_client.createRoot)(document.getElementById("app"));
-  root.render(/* @__PURE__ */ (0, import_jsx_runtime41.jsx)(App, {}));
+  root.render(/* @__PURE__ */ (0, import_jsx_runtime43.jsx)(App, {}));
 })();
 /*! Bundled license information:
 
@@ -42402,6 +43241,7 @@ lucide-react/dist/esm/shared/src/utils.js:
 lucide-react/dist/esm/defaultAttributes.js:
 lucide-react/dist/esm/Icon.js:
 lucide-react/dist/esm/createLucideIcon.js:
+lucide-react/dist/esm/icons/arrow-left.js:
 lucide-react/dist/esm/icons/chart-column.js:
 lucide-react/dist/esm/icons/check.js:
 lucide-react/dist/esm/icons/chevron-down.js:
@@ -42415,8 +43255,12 @@ lucide-react/dist/esm/icons/download.js:
 lucide-react/dist/esm/icons/file-down.js:
 lucide-react/dist/esm/icons/file-text.js:
 lucide-react/dist/esm/icons/file-up.js:
+lucide-react/dist/esm/icons/layers.js:
 lucide-react/dist/esm/icons/menu.js:
+lucide-react/dist/esm/icons/message-circle.js:
+lucide-react/dist/esm/icons/minus.js:
 lucide-react/dist/esm/icons/moon.js:
+lucide-react/dist/esm/icons/pen-line.js:
 lucide-react/dist/esm/icons/pen.js:
 lucide-react/dist/esm/icons/plus.js:
 lucide-react/dist/esm/icons/printer.js:
@@ -42425,9 +43269,12 @@ lucide-react/dist/esm/icons/rocket.js:
 lucide-react/dist/esm/icons/save.js:
 lucide-react/dist/esm/icons/search.js:
 lucide-react/dist/esm/icons/settings.js:
+lucide-react/dist/esm/icons/shopping-cart.js:
 lucide-react/dist/esm/icons/square-pen.js:
+lucide-react/dist/esm/icons/star.js:
 lucide-react/dist/esm/icons/sun.js:
 lucide-react/dist/esm/icons/trash-2.js:
+lucide-react/dist/esm/icons/truck.js:
 lucide-react/dist/esm/icons/upload.js:
 lucide-react/dist/esm/icons/users.js:
 lucide-react/dist/esm/icons/x.js:

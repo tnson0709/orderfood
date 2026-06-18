@@ -15,8 +15,8 @@ import {
   Settings, 
   BarChart3, 
   Users,
-  Home as HomeIcon,
-  Menu
+  Menu,
+  ShoppingCart,
 } from 'lucide-react';
 import { OrderList } from '@/components/orders/OrderList';
 import OrderInfoPage from './OrderInfo';
@@ -214,6 +214,24 @@ export default function HomePage() {
               >
                 <FileText className="mr-2 h-4 w-4" />
                 Danh sách đơn
+              </Button>
+
+              <Button
+                variant="ghost"
+                className="w-full justify-start"
+                onClick={() => { window.location.hash = "/orderfood" }}
+              >
+                <ShoppingCart className="mr-2 h-4 w-4" />
+                Đặt nhanh
+              </Button>
+
+              <Button
+                variant="ghost"
+                className="w-full justify-start"
+                onClick={() => { window.location.hash = "/foodadmin" }}
+              >
+                <Settings className="mr-2 h-4 w-4" />
+                Quản lý sản phẩm
               </Button>
               
               <Button
